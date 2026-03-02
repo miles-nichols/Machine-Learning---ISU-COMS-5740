@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\usepackage{color}
+\usepackage{amsmath,amsthm,amssymb,multirow,paralist}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{hyperref}
+
+\begin{document}
+
+\begin{center}
+{\Large \textbf{COM S 4740/5740: Introduction to Machine Learning}\\Homework \#3}\\
+
+\linethickness{1mm}\line(1,0){498}
+
+\begin{enumerate}
+\item Please put required code files and report into a
+compressed file ``HW\#\_FirstName\_LastName.zip''
+\item Unlimited number of submissions are
+allowed on Canvas and the latest one will be graded.
+\item {\color{red} No later submission is accepted.}
+\item Please read and follow submission instructions. No exception
+will be made to accommodate incorrectly submitted files/reports.
+\item All students are required to typeset their reports using
+latex. Overleaf
+(\url{https://www.overleaf.com/learn/latex/Tutorials}) can be a
+good start.
+\end{enumerate}
+
+\linethickness{1mm}\line(1,0){498}
+
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{enumerate}
+
+\item (20 points) Consider the toy data set $\{([0, 0], -1),
+([2, 2], -1), ([2, 0], +1)\}$. Set up the dual problem for
+the toy data set. Then, solve the dual problem and compute
+$\alpha^*$, the optimal Lagrange multipliers. (Note that there will
+be three weights $\boldsymbol w = [w_0, w_1, w_2]$ by considering
+the bias.)
+
+\item (20 points) In a separable case, when a multiplier
+$\alpha_i > 0$, its corresponding data point $(\boldsymbol x_i,
+y_i)$ is on the boundary of the optimal separating hyperplane
+with $y_i(\boldsymbol w^T \boldsymbol x_i) = 1$.
+
+Show that the inverse is not True. Namely, it is possible that
+$\alpha_i = 0$ and $(\boldsymbol x_i, y_i)$ is on the boundary
+satisfying $y_i(\boldsymbol w^T \boldsymbol x_i) = 1$.
+
+[Hint: Consider a toy data set with two positive examples at
+([0,0], +1) and ([1, 0], +1), and one negative example at ([0,
+1], -1).] (Note that there will be three weights $\boldsymbol w =
+[w_0, w_1, w_2]$ by considering the bias.)
+
+\item (20 points) \textbf{Kernel Function:} A function $K$
+computes $K(\boldsymbol x_i, \boldsymbol x_j) =
+-\boldsymbol{x_i}^T \boldsymbol x_j $. Is this function a valid
+kernel function for SVM? Prove or disprove it.
+
+\end{enumerate}
+
+\end{document}
